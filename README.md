@@ -2,7 +2,9 @@
 
 I've printed the fantastic Vampire 4 Standalone enclosure by Jörgen Bilander (see https://github.com/jbilander/Vampire_V4_Standalone_Enclosure). It allows to mount an Amiga 1200 LED PCB, however the Vampire 4 SA does not have any header to connect this board. This is why I've made a small adapter PCB that adds an Amiga 1200 LED header to the Vampire 4 SA.
 
-[Video of V4SA booting with A1200 LEDs](img/boot.webm) (Power on, SD card access to load kick rom, Amiga OS booting, Amiga OS mounting/reading SD card)
+![Video of V4SA booting with A1200 LEDs](img/boot.gif)
+
+(Power on, SD card access to load kick rom, Amiga OS booting, Amiga OS mounting/reading SD card)
 
 Adapter:
 
