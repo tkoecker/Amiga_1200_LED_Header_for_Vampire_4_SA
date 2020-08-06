@@ -4,11 +4,18 @@ I've printed the fantastic Vampire 4 Standalone enclosure by Jörgen Bilander (s
 
 ![Video of V4SA booting with A1200 LEDs](img/boot.gif)
 
-(Power on, SD card access to load kick rom, Amiga OS booting, Amiga OS mounting/reading SD card)
+(LED activity in the image above: Power on, SD card access to load kick rom, Amiga OS booting, Amiga OS mounting/reading SD card)
 
-Adapter:
+It uses an IC that provides 4 opamps. One opamp each is used to sense the power and drive LED state, adding only a neglectable additional load to the outputs of the V4SA. The two remaining opamps are for the floppy LED which can be either be triggered from an active low or an active high signal (selectable using a solder jumper).
+The chosen opamps have rail-to-rail outputs which allows to drive the LEDs on the Amiga 1200 LED PCB with a similar voltage as the original Amiga 1200 circuitry.
+
+*WARNING:* There is some fine soldering needed to install the PCB on the V4SA. If you do not feel confident doing that, please ask somebody who does. It would be a pitty if you ruin your nice V4SA when installing this board.
+
+Adapter (please note that the images were taken from an old board version, the current one has less solder pads - they are not needed):
 
 ![Adapter](img/adapter.jpg)
+
+![Adapter wires](img/wires.jpg)
 
 The board sits on top of the 68000 pins of the Vampire 4 SA and gets +5V and GND from there.
 
@@ -20,11 +27,11 @@ It also needs two wires to the original power and drive LEDs of the V4SA to sens
 
 For using the floppy led for the micro-SD card access a wire to pin 2 of the micro-SD card slot of the V4SA is needed.
 
-![Original LED wires](img/V4SA_SD.jpg)
+![SD wire](img/V4SA_SD.jpg)
 
+If you want use the floppy led you need to connect a solder jumper to select whether the signal is active-low or active-high:
 
-It uses an IC that provides 4 opamps. One opamp each is used to sense the power and drive LED state, adding only a neglectable additional load to the outputs of the V4SA. The two remaining opamps are for the floppy LED which can be either be triggered from an active low or an active high signal (selectable using a solder jumper).
-The chosen opamps have rail-to-rail outputs which allows to drive the LEDs on the Amiga 1200 LED PCB with a similar voltage as the original Amiga 1200 circuitry.
+![Solder jumper](img/solder_jumper.jpg)
 
 [Link to PCB on PCBWay](https://www.pcbway.com/project/shareproject/Amiga_1200_LED_Header_for_Vampire_4_Standalone.html)
 
